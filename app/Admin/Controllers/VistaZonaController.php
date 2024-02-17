@@ -18,7 +18,7 @@ class VistaZonaController extends Controller
     public function index(Content $content)
     {           
         
-        //Admin::js('/js/vista_sorteos.js'); 
+        Admin::js('/js/vista_sorteos.js'); 
         
         // Obtener todos los campeonatos
         $campeonatos = Campeonato::all();
