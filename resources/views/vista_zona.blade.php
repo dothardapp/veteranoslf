@@ -1,9 +1,13 @@
+<section class="content-header clearfix">
+    <h1>
+        Campeonatos
+        <small>Seleccione una opción</small>
+    </h1>
+</section>
+
 {{-- Selector de Campeonatos --}}
 <div class="row">
-
     <div class="col">
-        <!-- <label for="campeonatoSelect" class="form-label">Campeonato</label> -->
-        <h3>Campeonato</h3>
         <select class="form-select form-select-lm mb-3" id="campeonatoSelect" name="campeonatoSelect">
             @foreach($campeonatos as $campeonato)
             <option value="{{ $campeonato->id }}">{{ $campeonato->nombre }}</option> {{-- Cambia aquí --}}
