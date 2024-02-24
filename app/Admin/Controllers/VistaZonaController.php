@@ -18,7 +18,7 @@ class VistaZonaController extends Controller
     public function index(Content $content)
     {           
         
-        Admin::js('/js/vista_sorteos.js'); 
+        //Admin::js('/js/vista_sorteos.js'); 
         
         // Obtener todos los campeonatos
         $campeonatos = Campeonato::all();
@@ -57,10 +57,6 @@ class VistaZonaController extends Controller
             'sorteosPorDivisionYZona' => $sorteos,
             'nombreCampeonato' => $nombreCampeonato, // Incluye el nombre del campeonato aquí
         ]);
-    }
-
-    public function message(){
-        return "Hola gracias por entrar a este articulo";
     }
 
 }

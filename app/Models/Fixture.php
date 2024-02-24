@@ -9,6 +9,8 @@ class Fixture extends Model
 {
     use HasFactory;
 
+    public $timestamps = false;
+    
     protected $table = 'fixtures'; // Especifica el nombre de la tabla si no sigue la convención de nombres
 
     protected $fillable = [
@@ -18,7 +20,7 @@ class Fixture extends Model
         'zona',
         'fecha_num',
         'fecha',
-        'hora',
+        'hora_num',
         'equipo_local',
         'equipo_visitante',
         'goles_equipo_local',

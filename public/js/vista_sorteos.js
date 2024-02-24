@@ -13,15 +13,6 @@
             console.log('El elemento con ID "campeonatoSelect" no existe en el DOM.');
         }
 
-        var btn = document.getElementById('btnajax');
-
-        if (btn) {
-            btn.addEventListener('click', function () {
-                change_message();
-            });
-        } else {
-            console.log('El elemento con ID "btnajax" no existe en el DOM.');
-        }
     }
 
     function cargarDatos(campeonatoId) {
@@ -71,16 +62,6 @@
             // Añade la tarjeta al contenedor
             contenedor.innerHTML += tarjetaHTML;
         });
-    }
-
-    function change_message() {
-        axios.get('/admin/mensaje')
-            .then(function (response) {
-                console.log(response);
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
     }
 
     // Verifica si el DOM ya está cargado

@@ -384,7 +384,7 @@ admin.ajax = {
 
             script.onload = function() {
                 
-                // console.log('vista_sorteos.js se ha cargado y ejecutado.');
+                console.log('vista_sorteos.js se ha cargado y ejecutado.');
                 // Aquí puedes llamar a funciones de inicialización si es necesario
             };
             document.body.appendChild(script);            
