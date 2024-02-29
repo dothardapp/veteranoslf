@@ -56,7 +56,7 @@ class SorteoZonaController extends AdminController
                 // Aplica una clase diferente o maneja registros vacíos según sea necesario
                 return "<div class=\"bg-warning p-2 text-dark\">" . __('Sin equipo') . "</div>";
             }
-            return "<div class=\"custom-blue-bg p-2\">{$nombreDelEquipo}</div>"; // Usa la clase custom-blue-bg
+            return "<div class=\"custom-info-bg p-2\">{$nombreDelEquipo}</div>"; // Usa la clase custom-blue-bg
         });
         
         

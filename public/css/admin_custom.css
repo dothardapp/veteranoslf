@@ -1,4 +1,43 @@
-.custom-blue-bg {
-    background-color: #c5d7f3; /* Sustituye #someHexCode con el código hexadecimal real de tu color */
-    font-weight: bold;
+/* Estilo base para los divs de selección */
+.custom-bg {
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    transition: box-shadow .2s ease, transform .2s ease;
+}
+
+/* Interacción al pasar el mouse para todos los colores */
+.custom-bg:hover {
+    box-shadow: 0 4px 6px rgba(0,0,0,.2);
+    transform: translateY(-2px);
+}
+
+/* Estilos específicos para cada color de la paleta */
+.custom-primary-bg { background-color: #cfe2ff; color: #000000; font-weight: bold; text-align: center;}
+.custom-secondary-bg { background-color: #6c757d; color: #ffffff; }
+.custom-success-bg { background-color: #28a745; color: #ffffff; }
+.custom-danger-bg { background-color: #f8d7da; color: #000000; font-weight: bold; text-align: right;}
+.custom-warning-bg { background-color: #fff3cd; color: #000000; font-weight: bold; text-align: right;}
+.custom-info-bg { background-color: #cff4fc; color: #000000; font-weight: bold; text-align: center;}
+.custom-light-bg { background-color: #f8f9fa; color: #000000; font-weight: bold; text-align: center; }
+.custom-dark-bg { background-color: #212529; color: #ffffff; font-weight: bold; text-align: center;}
+
+/* Aplica la clase base .custom-bg a todos los colores */
+.custom-primary-bg, .custom-secondary-bg, .custom-success-bg,
+.custom-danger-bg, .custom-warning-bg, .custom-info-bg,
+.custom-light-bg, .custom-dark-bg {
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    transition: box-shadow .2s ease, transform .2s ease;
+}
+
+/* Asegurándose de que el hover se aplique correctamente */
+.custom-primary-bg:hover, .custom-secondary-bg:hover, .custom-success-bg:hover,
+.custom-danger-bg:hover, .custom-warning-bg:hover, .custom-info-bg:hover,
+.custom-light-bg:hover, .custom-dark-bg:hover {
+    box-shadow: 0 4px 6px rgba(0,0,0,.2);
+    transform: translateY(-2px);
 }
